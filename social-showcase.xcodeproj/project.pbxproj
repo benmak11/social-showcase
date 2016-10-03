@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A7CC0AC11DA2055E00EFBA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC0AC01DA2055E00EFBA67 /* AppDelegate.swift */; };
-		A7CC0AC31DA2055E00EFBA67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC0AC21DA2055E00EFBA67 /* ViewController.swift */; };
+		A7CC0AC31DA2055E00EFBA67 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC0AC21DA2055E00EFBA67 /* SignInVC.swift */; };
 		A7CC0AC61DA2055E00EFBA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CC0AC41DA2055E00EFBA67 /* Main.storyboard */; };
 		A7CC0AC81DA2055E00EFBA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CC0AC71DA2055E00EFBA67 /* Assets.xcassets */; };
 		A7CC0ACB1DA2055E00EFBA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CC0AC91DA2055E00EFBA67 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		5CD4F3EE4531988E1B8C9B4F /* Pods_social_showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CC0ABD1DA2055E00EFBA67 /* social-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "social-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CC0AC01DA2055E00EFBA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7CC0AC21DA2055E00EFBA67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7CC0AC21DA2055E00EFBA67 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		A7CC0AC51DA2055E00EFBA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7CC0AC71DA2055E00EFBA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CC0ACA1DA2055E00EFBA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +50,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A7ABC3101DA20A040081667B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7CC0AC21DA2055E00EFBA67 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A7ABC3111DA20A110081667B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A7ABC3121DA20A170081667B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A7CC0AB41DA2055E00EFBA67 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +93,10 @@
 		A7CC0ABF1DA2055E00EFBA67 /* social-showcase */ = {
 			isa = PBXGroup;
 			children = (
+				A7ABC3121DA20A170081667B /* Model */,
+				A7ABC3111DA20A110081667B /* View */,
+				A7ABC3101DA20A040081667B /* Controller */,
 				A7CC0AC01DA2055E00EFBA67 /* AppDelegate.swift */,
-				A7CC0AC21DA2055E00EFBA67 /* ViewController.swift */,
 				A7CC0AC41DA2055E00EFBA67 /* Main.storyboard */,
 				A7CC0AC71DA2055E00EFBA67 /* Assets.xcassets */,
 				A7CC0AC91DA2055E00EFBA67 /* LaunchScreen.storyboard */,
@@ -216,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7CC0AC31DA2055E00EFBA67 /* ViewController.swift in Sources */,
+				A7CC0AC31DA2055E00EFBA67 /* SignInVC.swift in Sources */,
 				A7CC0AC11DA2055E00EFBA67 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +285,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -311,6 +336,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -343,6 +369,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X9S97S4N54;
 				INFOPLIST_FILE = "social-showcase/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benmakusha.social-showcase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X9S97S4N54;
 				INFOPLIST_FILE = "social-showcase/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benmakusha.social-showcase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
