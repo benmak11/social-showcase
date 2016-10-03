@@ -12,9 +12,13 @@
 		A7CC0AC61DA2055E00EFBA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CC0AC41DA2055E00EFBA67 /* Main.storyboard */; };
 		A7CC0AC81DA2055E00EFBA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CC0AC71DA2055E00EFBA67 /* Assets.xcassets */; };
 		A7CC0ACB1DA2055E00EFBA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CC0AC91DA2055E00EFBA67 /* LaunchScreen.storyboard */; };
+		A7CC0AD31DA206CF00EFBA67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7CC0AD21DA206CE00EFBA67 /* GoogleService-Info.plist */; };
+		D0A7FB71DCCF605CFBA7DE62 /* Pods_social_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD4F3EE4531988E1B8C9B4F /* Pods_social_showcase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04DA50213785F4B46ED41E85 /* Pods-social-showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-social-showcase/Pods-social-showcase.release.xcconfig"; sourceTree = "<group>"; };
+		5CD4F3EE4531988E1B8C9B4F /* Pods_social_showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CC0ABD1DA2055E00EFBA67 /* social-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "social-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CC0AC01DA2055E00EFBA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7CC0AC21DA2055E00EFBA67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		A7CC0AC71DA2055E00EFBA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CC0ACA1DA2055E00EFBA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7CC0ACC1DA2055E00EFBA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7CC0AD21DA206CE00EFBA67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4E3CAA87EFCFE5D76512A39 /* Pods-social-showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social-showcase/Pods-social-showcase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A7FB71DCCF605CFBA7DE62 /* Pods_social_showcase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E50322D6384B252045B0449 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CD4F3EE4531988E1B8C9B4F /* Pods_social_showcase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A7CC0AB41DA2055E00EFBA67 = {
 			isa = PBXGroup;
 			children = (
 				A7CC0ABF1DA2055E00EFBA67 /* social-showcase */,
 				A7CC0ABE1DA2055E00EFBA67 /* Products */,
+				ACD82DE5A45175AAC3E752E1 /* Pods */,
+				0E50322D6384B252045B0449 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				A7CC0AC71DA2055E00EFBA67 /* Assets.xcassets */,
 				A7CC0AC91DA2055E00EFBA67 /* LaunchScreen.storyboard */,
 				A7CC0ACC1DA2055E00EFBA67 /* Info.plist */,
+				A7CC0AD21DA206CE00EFBA67 /* GoogleService-Info.plist */,
 			);
 			path = "social-showcase";
+			sourceTree = "<group>";
+		};
+		ACD82DE5A45175AAC3E752E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4E3CAA87EFCFE5D76512A39 /* Pods-social-showcase.debug.xcconfig */,
+				04DA50213785F4B46ED41E85 /* Pods-social-showcase.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7CC0ACF1DA2055F00EFBA67 /* Build configuration list for PBXNativeTarget "social-showcase" */;
 			buildPhases = (
+				2E1A11F5FD9B17FF495FB562 /* [CP] Check Pods Manifest.lock */,
 				A7CC0AB91DA2055E00EFBA67 /* Sources */,
 				A7CC0ABA1DA2055E00EFBA67 /* Frameworks */,
 				A7CC0ABB1DA2055E00EFBA67 /* Resources */,
+				484C97C81FF8D746511CB927 /* [CP] Embed Pods Frameworks */,
+				69D3A14949FD7A8BA18AEE20 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7CC0ACB1DA2055E00EFBA67 /* LaunchScreen.storyboard in Resources */,
+				A7CC0AD31DA206CF00EFBA67 /* GoogleService-Info.plist in Resources */,
 				A7CC0AC81DA2055E00EFBA67 /* Assets.xcassets in Resources */,
 				A7CC0AC61DA2055E00EFBA67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E1A11F5FD9B17FF495FB562 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		484C97C81FF8D746511CB927 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-social-showcase/Pods-social-showcase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69D3A14949FD7A8BA18AEE20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-social-showcase/Pods-social-showcase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7CC0AB91DA2055E00EFBA67 /* Sources */ = {
@@ -259,6 +338,7 @@
 		};
 		A7CC0AD01DA2055F00EFBA67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E3CAA87EFCFE5D76512A39 /* Pods-social-showcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X9S97S4N54;
@@ -272,6 +352,7 @@
 		};
 		A7CC0AD11DA2055F00EFBA67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04DA50213785F4B46ED41E85 /* Pods-social-showcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X9S97S4N54;
@@ -302,6 +383,7 @@
 				A7CC0AD11DA2055F00EFBA67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
