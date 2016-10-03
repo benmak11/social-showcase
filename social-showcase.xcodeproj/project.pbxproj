@@ -37,6 +37,7 @@
 		A7EEFCC21DA2178400731A91 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		A7EEFCC41DA218BE00731A91 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		A7EEFCC61DA219E900731A91 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		A7F1C62F1DA22425001C1516 /* social-showcase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "social-showcase.entitlements"; sourceTree = "<group>"; };
 		C4E3CAA87EFCFE5D76512A39 /* Pods-social-showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social-showcase/Pods-social-showcase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +108,7 @@
 		A7CC0ABF1DA2055E00EFBA67 /* social-showcase */ = {
 			isa = PBXGroup;
 			children = (
+				A7F1C62F1DA22425001C1516 /* social-showcase.entitlements */,
 				A7EEFCBF1DA2160400731A91 /* Util */,
 				A7ABC3121DA20A170081667B /* Model */,
 				A7ABC3111DA20A110081667B /* View */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = X9S97S4N54;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -395,6 +402,7 @@
 			baseConfigurationReference = C4E3CAA87EFCFE5D76512A39 /* Pods-social-showcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "social-showcase/social-showcase.entitlements";
 				DEVELOPMENT_TEAM = X9S97S4N54;
 				INFOPLIST_FILE = "social-showcase/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -410,6 +418,7 @@
 			baseConfigurationReference = 04DA50213785F4B46ED41E85 /* Pods-social-showcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "social-showcase/social-showcase.entitlements";
 				DEVELOPMENT_TEAM = X9S97S4N54;
 				INFOPLIST_FILE = "social-showcase/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
