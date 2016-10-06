@@ -54,7 +54,6 @@
 	<string>156455128143867</string>
 	<key>FacebookDisplayName</key>
 	<string>social-showcase</string>
-    
     <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>fbapi</string>

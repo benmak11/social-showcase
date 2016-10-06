@@ -17,6 +17,10 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 
     @IBAction func facebookBtnTapped(_ sender: AnyObject) {
         
