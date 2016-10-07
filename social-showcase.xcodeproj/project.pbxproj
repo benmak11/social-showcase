@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A760561F1DA727F300BCBCC2 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A760561E1DA727F300BCBCC2 /* FeedVC.swift */; };
 		A7CC0AC11DA2055E00EFBA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC0AC01DA2055E00EFBA67 /* AppDelegate.swift */; };
 		A7CC0AC31DA2055E00EFBA67 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC0AC21DA2055E00EFBA67 /* SignInVC.swift */; };
 		A7CC0AC61DA2055E00EFBA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CC0AC41DA2055E00EFBA67 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		04DA50213785F4B46ED41E85 /* Pods-social-showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-social-showcase/Pods-social-showcase.release.xcconfig"; sourceTree = "<group>"; };
 		5CD4F3EE4531988E1B8C9B4F /* Pods_social_showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A760561E1DA727F300BCBCC2 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		A7CC0ABD1DA2055E00EFBA67 /* social-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "social-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CC0AC01DA2055E00EFBA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7CC0AC21DA2055E00EFBA67 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				A7CC0AC21DA2055E00EFBA67 /* SignInVC.swift */,
+				A760561E1DA727F300BCBCC2 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				A7CC0AC31DA2055E00EFBA67 /* SignInVC.swift in Sources */,
 				A7EEFCC31DA2178400731A91 /* RoundButton.swift in Sources */,
 				A7EEFCC71DA219E900731A91 /* FancyButton.swift in Sources */,
+				A760561F1DA727F300BCBCC2 /* FeedVC.swift in Sources */,
 				A7CC0AC11DA2055E00EFBA67 /* AppDelegate.swift in Sources */,
 				A7EEFCBE1DA2151D00731A91 /* FancyView.swift in Sources */,
 				A7EEFCC11DA2161000731A91 /* Constants.swift in Sources */,
