@@ -1,14 +1,14 @@
 //
-//  FancyView.swift
+//  CircleView.swift
 //  social-showcase
 //
-//  Created by Baynham Makusha on 10/3/16.
+//  Created by Baynham Makusha on 10/8/16.
 //  Copyright © 2016 Ben Makusha. All rights reserved.
 //
 
 import UIKit
 
-class FancyView: UIView {
+class CircleView: UIImageView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,7 +17,12 @@ class FancyView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 2.0
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        layer.cornerRadius = self.frame.width / 2
     }
 
 }
