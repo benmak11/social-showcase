@@ -89,6 +89,23 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         present(imagePicker, animated: true, completion: nil)
     }
+    
+    func postToFirebase(imgURL: String) {
+        let post: Dictionary<String, Any> = [
+            "caption": captionField.text!,
+            "imageURL": imgURL,
+            "likes": 0
+        ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        captionField.text = ""
+        imageSelected = false
+        addImageImg.image = UIImage(named: "add-image")
+        
+        tableView.reloadData()
+    }
 
     @IBAction func signOutPressed(_ sender: AnyObject) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
@@ -119,6 +136,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 } else {
                     print("BEN: Successfully uploaded image to Firebase storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
+                    if let url = downloadURL {
+                        self.postToFirebase(imgURL: url)
+                    }
+                    
                 }
             }
         }
