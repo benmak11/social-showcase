@@ -41,22 +41,22 @@ class PostCell: UITableViewCell {
             self.postImage.image = img
         } else {
             let ref = FIRStorage.storage().reference(forURL: post.imageURL)
-            print("BEN: Checkpoint= \(ref)")
-            
-            ref.data(withMaxSize: (2 * 1024 + 1024), completion: { (data, error) in
-                if error != nil {
-                    print("BEN: Unable to download image form Firebase storage")
-                } else {
-                    print("BEN: Image downloaded from Firebase storage")
-                    if let imgData = data {
-                        if let img = UIImage(data: imgData) {
-                            self.postImage.image = img
-                            FeedVC.imageCache.setObject(img, forKey: post.imageURL as NSString)
+            //let changedRef = FIRStorageReference.write(ref, completion: { (url, error) in
+                ref.data(withMaxSize: (2 * 1024 * 1024), completion: { (data, error) in
+                    if error != nil {
+                        print("BEN: Unable to download image form Firebase storage")
+                        print("BEN: \(error.debugDescription)")
+                    } else {
+                        print("BEN: Image downloaded from Firebase storage")
+                        if let imgData = data {
+                            if let img = UIImage(data: imgData) {
+                                self.postImage.image = img
+                                FeedVC.imageCache.setObject(img, forKey: post.imageURL as NSString)
+                            }
                         }
                     }
-                }
-
-            })
+                })
+            //})
         }
         
 
